@@ -1,11 +1,11 @@
 pipeline{
     agent any
     parameters{
-        booleanParam{
+        booleanParam(
             name:'RUN_EXTRA_CHECKS',
             defaultValue: true,
             description: 'Run when true'
-        }
+        )
     }
     stages{
         stage('Checkout'){
