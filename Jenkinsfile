@@ -21,7 +21,7 @@ pipeline{
         stage('EXTRA CHECK'){
             when{
                 expression{
-                    RUN_EXTRA_CHECKS == true
+                    params.RUN_EXTRA_CHECKS == true
                 }
             }
             steps{
